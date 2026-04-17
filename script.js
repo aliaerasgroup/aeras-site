@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Intersection Observer for Scroll Animations
+    // Reveal Engine
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -10,14 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Navbar Toggle (Mobile)
+    // Mobile Hamburger Toggle
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
+
     hamburger?.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
 
-    // Smart Navbar Behavior (Hide on Scroll Down, Show on Scroll Up)
+    // Handle Navbar hide/show on scroll
     let lastScroll = 0;
     const navbar = document.querySelector('.glass-nav');
 
@@ -28,8 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         if (currentScroll > lastScroll) {
+            // Scrolling down
             navbar.style.transform = 'translateX(-50%) translateY(-150%)';
         } else {
+            // Scrolling up
             navbar.style.transform = 'translateX(-50%) translateY(0)';
         }
         lastScroll = currentScroll;
