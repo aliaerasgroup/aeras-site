@@ -9,23 +9,19 @@
 </head>
 <body>
 
-    <div class="background-canvas">
-        <div class="sky-texture"></div>
-        <div class="fluid-blob fluid-1"></div>
-        <div class="fluid-blob fluid-2"></div>
-        <div class="fluid-blob fluid-3"></div>
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="background-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
     </div>
 
     <nav class="glass-nav">
         <div class="nav-container">
             <img src="corner-logo.png" alt="Aeras Group" class="nav-logo">
-            
             <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
-
             <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
                 <a href="#divisions">Divisions</a>
@@ -63,7 +59,6 @@
         <div class="container">
             <h2 class="liquid-heading reveal">Our Divisions</h2>
             <div class="bubble-grid">
-                
                 <div class="bubble glass reveal has-bg">
                     <img src="aeras-strategy.jpg" alt="Strategy" class="bubble-bg-img">
                     <div class="bubble-content">
@@ -71,7 +66,6 @@
                         <p>Operational planning and strategic growth initiatives.</p>
                     </div>
                 </div>
-
                 <div class="bubble glass reveal has-bg">
                     <img src="aeras-digital.jpg" alt="Digital" class="bubble-bg-img">
                     <div class="bubble-content">
@@ -79,7 +73,6 @@
                         <p>Brand identity, content creation, and experience design.</p>
                     </div>
                 </div>
-
                 <div class="bubble glass reveal has-bg">
                     <img src="aeras-talent.jpg" alt="Talent" class="bubble-bg-img">
                     <div class="bubble-content">
@@ -87,7 +80,6 @@
                         <p>Global workforce solutions and remote team management.</p>
                     </div>
                 </div>
-
                 <div class="bubble glass reveal has-bg">
                     <img src="aeras-connect.jpg" alt="Connect" class="bubble-bg-img">
                     <div class="bubble-content">
@@ -95,7 +87,6 @@
                         <p>Strategic partnerships and high-level network access.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -105,48 +96,25 @@
             <h2 class="liquid-heading">Contact Us</h2>
             <div class="glass contact-glass">
                 <p class="contact-subtext">Reach out to discover how AERAS Group can elevate your organization.</p>
-                
                 <form action="https://formsubmit.co/hello@aerasgroup.ca" method="POST" class="contact-form">
-                    
-                    <input type="hidden" name="_subject" value="New Website Inquiry - Aeras Group">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="box">
-                    
-                    <div class="form-group">
-                        <input type="text" name="Name" placeholder="Full Name" required>
-                    </div>
-                    
+                    <div class="form-group"><input type="text" name="Name" placeholder="Full Name" required></div>
                     <div class="form-row">
-                        <div class="form-group">
-                            <input type="email" name="Email" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" name="Phone" placeholder="Phone Number">
-                        </div>
+                        <div class="form-group"><input type="email" name="Email" placeholder="Email Address" required></div>
+                        <div class="form-group"><input type="tel" name="Phone" placeholder="Phone Number"></div>
                     </div>
-
                     <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" name="Business Name" placeholder="Business Name (Optional)">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="Website" placeholder="Website URL (Optional)">
-                        </div>
+                        <div class="form-group"><input type="text" name="Business Name" placeholder="Business Name"></div>
+                        <div class="form-group"><input type="text" name="Website" placeholder="Website URL"></div>
                     </div>
-
-                    <div class="form-group">
-                        <textarea name="Message" rows="4" placeholder="How can we help you?" required></textarea>
-                    </div>
-
+                    <div class="form-group"><textarea name="Message" rows="4" placeholder="How can we help you?" required></textarea></div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 AERAS Group | aerasgroup.ca</p>
-    </footer>
+    <footer><p>© 2026 AERAS Group | aerasgroup.ca</p></footer>
 
     <script src="script.js"></script>
 </body>
