@@ -18,7 +18,7 @@
 
     <nav class="glass-nav">
         <div class="nav-container">
-            <img src="logo-corner.png" alt="Aeras Group" class="nav-logo">
+            <img src="corner-logo.png" alt="Aeras Group" class="nav-logo">
             
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -29,7 +29,7 @@
             <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
                 <a href="#divisions">Divisions</a>
-                <a href="#contact" class="cta-bubble">Learn More</a>
+                <a href="#contact" class="cta-bubble">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -102,11 +102,15 @@
 
     <section id="contact" class="contact-section">
         <div class="container reveal">
-            <h2 class="liquid-heading">Learn More</h2>
+            <h2 class="liquid-heading">Contact Us</h2>
             <div class="glass contact-glass">
                 <p class="contact-subtext">Reach out to discover how AERAS Group can elevate your organization.</p>
                 
-                <form action="mailto:ali@aerasgroup.ca,ashar@aerasgroup.ca" method="POST" enctype="text/plain" class="contact-form">
+                <form action="https://formsubmit.co/hello@aerasgroup.ca" method="POST" class="contact-form">
+                    
+                    <input type="hidden" name="_subject" value="New Website Inquiry - Aeras Group">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
                     
                     <div class="form-group">
                         <input type="text" name="Name" placeholder="Full Name" required>
