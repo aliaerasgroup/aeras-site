@@ -1,24 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Reveal Engine
+    // Reveal Observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
             }
         });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.1 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Mobile Hamburger Toggle
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger?.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-
-    // Handle Navbar hide/show on scroll
+    // Nav Behavior
     let lastScroll = 0;
     const navbar = document.querySelector('.glass-nav');
 
@@ -29,10 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         if (currentScroll > lastScroll) {
-            // Scrolling down
             navbar.style.transform = 'translateX(-50%) translateY(-150%)';
         } else {
-            // Scrolling up
             navbar.style.transform = 'translateX(-50%) translateY(0)';
         }
         lastScroll = currentScroll;
