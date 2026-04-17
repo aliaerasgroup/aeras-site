@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AERAS GROUP | The Era of Human Connection</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -56,7 +56,7 @@
 
     <section id="about" class="about-section">
         <div class="container reveal">
-            <h2 class="liquid-heading">Bridging Automation with Authenticity</h2>
+            <h2 class="liquid-heading">Bridging automation with authenticity</h2>
             <div class="about-flex glass">
                 <div class="text-content">
                     <p>Aeras Group is a modern advisory and consulting firm built for an evolving, AI-driven world. The firm exists to bridge the growing gap between automation and authentic human relationships.</p>
@@ -71,15 +71,15 @@
 
     <section class="meaning-section">
         <div class="container reveal">
-            <div class="meaning-glass glass">
-                <p class="meaning-text">The brand reflects fluidity and responsiveness rather than rigidity, positioning the firm as a dynamic partner that evolves alongside its clients.</p>
+            <div class="meaning-glass glass-pop">
+                <p class="meaning-text">The brand reflects <span>fluidity</span> and <span>responsiveness</span> rather than rigidity, positioning the firm as a dynamic partner that evolves alongside its clients.</p>
             </div>
         </div>
     </section>
 
     <section id="divisions" class="divisions-section">
         <div class="container">
-            <h2 class="liquid-heading reveal">Our Divisions</h2>
+            <h2 class="liquid-heading reveal">Divisions</h2>
             <div class="bubble-grid">
                 <div class="bubble glass reveal has-bg">
                     <img src="aeras-strategy.jpg" alt="Strategy" class="bubble-bg-img">
@@ -118,18 +118,42 @@
             <h2 class="liquid-heading">Contact Us</h2>
             <div class="glass contact-glass">
                 <p class="contact-subtext">Reach out to discover how AERAS Group can elevate your organization.</p>
+                
                 <form action="https://formsubmit.co/hello@aerasgroup.ca" method="POST" class="contact-form">
                     <input type="hidden" name="_captcha" value="false">
-                    <div class="form-group"><input type="text" name="Name" placeholder="Full Name" required></div>
-                    <div class="form-row">
-                        <div class="form-group"><input type="email" name="Email" placeholder="Email Address" required></div>
-                        <div class="form-group"><input type="tel" name="Phone" placeholder="Phone Number"></div>
+                    
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="Name" placeholder="Enter your name" required>
                     </div>
+                    
                     <div class="form-row">
-                        <div class="form-group"><input type="text" name="Business Name" placeholder="Business Name"></div>
-                        <div class="form-group"><input type="text" name="Website" placeholder="Website URL"></div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="Email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" name="Phone" placeholder="(555) 000-0000">
+                        </div>
                     </div>
-                    <div class="form-group"><textarea name="Message" rows="4" placeholder="How can we help you?" required></textarea></div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Business Name <span>(Optional)</span></label>
+                            <input type="text" name="Business Name" placeholder="Your Company">
+                        </div>
+                        <div class="form-group">
+                            <label>Website URL <span>(Optional)</span></label>
+                            <input type="text" name="Website" placeholder="https://">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="Message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
